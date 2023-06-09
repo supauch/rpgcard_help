@@ -83,7 +83,7 @@
 </h3>
 
 <p>
-    <a href="https://rpg-cards.vercel.app/">Try it out yourself</a>.
+    <a href="supauch.github.io/rpg-cards/">Try it out yourself</a>.
     Press "Load sample" in the menu, then press "Generate" and have a look at the newly opened window/tab that contains all the generated cards.
 </p>
 
@@ -160,11 +160,34 @@ This is not a complete documentation, but some information that should help you 
             </ul>
         </li>
         <li>
+            <code>dottedrule</code>
+            A horizontal "dotted" line. (WIP)
+            <ul>
+            </ul>
+        </li>
+        <li>
             <code>property</code>
             A property line. The property description is indented if it spans more than one line.
             <ul>
                 <li><em>Param1</em> - the property name (in bold).</li>
                 <li><em>Param2</em> - the property description.</li>
+            </ul>
+        </li>
+        <li>
+            <code>ulproperty</code>
+            A property line. The property name is underlined and bold, the property description is indented if it spans more than one line.
+            <ul>
+                <li><em>Param1</em> - the property name (in bold and underlined).</li>
+                <li><em>Param2</em> - the property description.</li>
+            </ul>
+        </li>
+        <li>
+            <code>detlist</code>
+            A detail list, with a name, descirption and bullet point list
+            <ul>
+                <li><em>Param1</em> - the name of the list (in bold)</li>
+                <li><em>Param2</em> - description of the list</li>
+                <li><em>Param3+</em> - continuous bullet points for the list</li>
             </ul>
         </li>
         <li>
@@ -240,11 +263,44 @@ This is not a complete documentation, but some information that should help you 
             </ul>
         </li>
         <li>
+            <code>boldbullet</code>
+            A bold bulleted text line.
+            <ul>
+                <li><em>Param1</em> - the text (in bold).</li>
+            </ul>
+        </li>
+        <li>
             <code>picture</code>
             An inline picture.
             <ul>
                 <li><em>Param1</em> - URL of the picture.</li>
                 <li><em>Param2</em> - Height in pixels.</li>
+            </ul>
+        </li>
+        <li>
+            <code>desclist (WIP)</code>
+            A continous described line of text, parameters go in pairs, first one is bold next is not. 
+            <ul>
+                <li><em>Param1</em> - The Name of the item</li>
+                <li><em>Param2</em> - The Description</li>
+                <li><em>Param3+</em> - continue in pairs for a list of described items</li>
+            </ul>
+        </li>
+        <li>
+            <code>tablehead</code>
+            A Table with a header
+            <ul>
+                <li><em>Param1</em> - The number of colums for your table</li>
+                <li><em>Param2-(the number in param1)</em> - The Header</li>
+                <li><em>Param?-?</em> - The Rest of the table, goes in groups based on Param1</li>
+            </ul>
+        </li>
+        <li>
+            <code>table</code>
+            A Table without a header
+            <ul>
+                <li><em>Param1</em> - The number of colums for your table</li>
+                <li><em>Param?-?</em> - The table, goes in groups based on Param1</li>
             </ul>
         </li>
     </ul>
